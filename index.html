@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.2.3';i.staticDir='build/';})(window);
+  </script>
+    <meta charset="UTF-8">
+    <title>KLoBus39</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4e8ef7">
+
+    <link href="build/main.css" rel="stylesheet">
+    
+    <style>
+        #loader {
+            position: fixed;
+            left: 0;
+            top: 10%;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: 30;
+        }
+        
+        .spinner {
+            /* width: 20em;
+            top: 45%; */
+            left: -10em;
+            margin-left: 50%;
+            height: 28em;
+            background: url(assets/img/spiner.png) center center no-repeat;
+            background-size: 9em;
+            margin: 100px auto;
+            -webkit-animation: sk-bounce 6s infinite ease-in-out;
+            animation: sk-bounce 6s infinite ease-in-out;
+        }
+        
+        @-webkit-keyframes sk-bounce {
+            0%,
+            100% {
+                -webkit-transform: scale(0.8)
+            }
+            25% {
+                -webkit-transform: scale(.40);
+                -webkit-transform: perspective(150px) rotateY(30deg)
+            }
+            75% {
+                -webkit-transform: scale(.40);
+                -webkit-transform: perspective(150px) rotateY(-30deg)
+            }
+        }
+        
+        @keyframes sk-bounce {
+            0%,
+            100% {
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+            }
+            25% {
+                transform: scale(.4);
+                -webkit-transform: scale(.4);
+                transform: perspective(150px) rotateY(30deg);
+                -webkit-transform: perspective(150px) rotateY(30deg)
+            }
+            75% {
+                transform: scale(.4);
+                -webkit-transform: scale(.4);
+                transform: perspective(150px) rotateY(30deg);
+                -webkit-transform: perspective(150px) rotateY(-30deg)
+            }
+        }
+    </style>
+
+<script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    
+</head>
+
+
+<body> 
+    <ion-app>
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
+    </ion-app>
+    
+    <script src="cordova.js"></script>
+    <script src="build/polyfills.js"></script>
+    <script src="build/vendor.js"></script>
+    
+    <script src="build/main.js"></script>
+  
+    <!-- Погода -->
+    
+</body>
+
+</html>
